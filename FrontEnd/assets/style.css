@@ -137,7 +137,6 @@ nav a.active {
 }
 #portfolio h2 {
 	text-align: center;
-	margin-bottom: 1em;
 }
 
 /* Filters styling */
@@ -333,7 +332,7 @@ footer nav ul {
 	z-index: 1000;
 }
 
-.edit-bar-content {
+.edit-bar-content, .edit-icon i {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -341,7 +340,7 @@ footer nav ul {
 	gap: 10px;
 }
 
-.edit-icon i, .edit-bar-content span {
+.edit-bar-content span {
 	font-size: 16px;
 	font-family: 'Work Sans';
 	font-weight: 400;
@@ -358,6 +357,7 @@ body.edit-mode {
 	margin-bottom: 1em;
 	gap: 30px;
 	position: relative;
+	margin-bottom: 10em;
 }
 
 .modify-btn {
@@ -537,6 +537,25 @@ body.edit-mode {
 	color: #3D3D3D;
 	margin-bottom: -10px;
 }
+
+/* Centre UNIQUEMENT Titre & Catégorie */
+.add-photo-form label[for="title"],
+.add-photo-form label[for="category"] {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;          /* remplace le -10px actuel */
+}
+
+/* Champ centré et de largeur contrôlée */
+#title,
+#category {
+  display: block;
+  width: 420px;                 /* ajuste: 360–480px selon ton rendu */
+  max-width: 90%;
+  margin: 0 auto;               /* centre le bloc */
+  text-align: left;             /* mets 'center' si tu veux le texte centré */
+}
+
 
 .add-photo-form input[type="text"],
 .add-photo-form select {

@@ -107,6 +107,7 @@ function checkLoginStatus() {
   const loginLink = document.getElementById('login-link');
   const logoutLink = document.getElementById('logout-link');
   const modifyBtn = document.getElementById('modify-btn');
+  const modifyBtn1 = document.getElementById('modify-btn1');
   const filterContainer = document.querySelector('.filters');
 
   if (isLoggedIn) {
@@ -116,6 +117,7 @@ function checkLoginStatus() {
     loginLink.style.display = 'none';
     logoutLink.style.display = 'inline-block';
     modifyBtn.style.display = 'flex';
+    modifyBtn1.style.display = 'flex';
 
     // Hide filter container
     if (filterContainer) {
@@ -132,6 +134,7 @@ function checkLoginStatus() {
 
     // Setup modify button to open modal
     modifyBtn.addEventListener('click', openGalleryModal);
+    modifyBtn1.addEventListener('click', openGalleryModal);
   } else {
     // Hide edit mode elements
     editBar.style.display = 'none';
@@ -139,6 +142,7 @@ function checkLoginStatus() {
     loginLink.style.display = 'inline-block';
     logoutLink.style.display = 'none';
     modifyBtn.style.display = 'none';
+    modifyBtn1.style.display = 'none';
 
     // Show filter container
     if (filterContainer) {
