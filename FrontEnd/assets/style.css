@@ -538,7 +538,6 @@ body.edit-mode {
 	margin-bottom: -10px;
 }
 
-/* Centre UNIQUEMENT Titre & Catégorie */
 .add-photo-form label[for="title"],
 .add-photo-form label[for="category"] {
   display: block;
@@ -546,7 +545,6 @@ body.edit-mode {
   margin-bottom: 10px;          /* remplace le -10px actuel */
 }
 
-/* Champ centré et de largeur contrôlée */
 #title,
 #category {
   display: block;

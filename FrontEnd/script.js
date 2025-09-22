@@ -64,7 +64,7 @@ function displayFilters(categories, works) {
   filterContainer.innerHTML = "";
 
   if (!categories || categories.length === 0 || !works) {
-    // If we don't have categories or works, don't display filters
+    // si pas de categories ou works ne pas afficher filter
     return;
   }
 
@@ -265,8 +265,8 @@ function openAddPhotoModal() {
   const galleryModal = document.getElementById('gallery-modal');
   const addPhotoModal = document.getElementById('add-photo-modal');
 
-  galleryModal.classList.add('hidden');
-  addPhotoModal.classList.remove('hidden');
+  galleryModal.classList.add('hidden'); //cacher la gallert
+  addPhotoModal.classList.remove('hidden'); // on enleve la classe hidden le formulaire ajout photo s'affiche
 
   // Populate the category select
   populateCategorySelect();
